@@ -1,11 +1,12 @@
 site:
   title: Rapport de Stage
   url: https://docs.demo.com
-  start_page: csmi-m1-stage-2023::introduction.adoc # page principale du site
+  start_page: rapport-de-stage::accueil.adoc # page principale du site
 
 content:
   sources:
   - url: https://github.com/DonnescoPablo/csmi-m1-stage-2023.git
+    branches: HEAD
     start_path: site # l'endroit où Antora commence par rechercher les sources
 
 ui:
