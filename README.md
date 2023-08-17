@@ -3,7 +3,7 @@ Projet playbook - rapport de stage pour le Master 1 Calcul Scientifique et Math�
 
 ## Cloner ce repository
 
-`git clone git@github.com:DonnescoPablo/csmi-m1-stage-2023-playbook.git`
+```git clone git@github.com:DonnescoPablo/csmi-m1-stage-2023-playbook.git```
 
 ## Installer localement Antora
 
@@ -15,12 +15,12 @@ node -e "fs.writeFileSync('package.json', '{}')" && npm i -D -E @antora/cli@3.1 
 
 Vérifier que la commande `antora` fonctionne:
 
-`npx antora -v`
+```npx antora -v```
 
 ## Générer le site
 
-`npx antora --fetch antora-playbook.yml`
+```npx antora --fetch antora-playbook.yml```
 
 ## Ouvrir le site
 
-`open build/site/index.html`
+```open build/site/index.html```
