@@ -1,6 +1,6 @@
 site:
   title: Rapport de Stage
-  url: https://docs.demo.com
+  url: https://donnescopablo.github.io/csmi-m1-stage-2023-playbook/
   start_page: rapport-de-stage::accueil.adoc # page principale du site
 
 content:
