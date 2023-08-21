@@ -11,5 +11,5 @@ content:
 
 ui:
   bundle:
-    url: ./antora-ui-default/build/ui-bundle.zip
+    url: ./my-ui/build/ui-bundle.zip
     snapshot: true
