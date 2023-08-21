@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Rapport de Stage</title>
+    <link rel="canonical" href="https://docs.demo.com/rapport-de-stage/1.0/taches-contributions/bdd.html">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.demo.com">Rapport de Stage</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+            <a class="navbar-brand" href="https://www.axessim.fr/">
+                <img src="../../../_/img/logo-axessim.png" alt="CSMI logo" style="margin-right: 1rem; max-height: 40px; width: auto;"/>
+            </a>
+        </div>
+        <div class="navbar-item">
+            <a class="navbar-brand" href="https://csmi.cemosis.fr/csmi/csmi/index.html">
+                <img src="../../../_/img/logo-csmi.png" alt="CSMI logo" style="margin-right: 1rem; max-height: 40px; width: auto;"/>
+            </a>
+        </div>
+        <div class="navbar-item">
+            <a class="navbar-brand"  href="https://www.unistra.fr/">
+                <img src="../../../_/img/logo-unistra.png" alt="Cemosis logo" style="max-height: 40px; width: auto;"/>
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rapport-de-stage" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../accueil.html">Rapport de Stage</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../accueil.html">Accueil</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../organisme-accueil/presentation.html">Organisme d&#8217;accueil</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../missions-objectifs/description.html">Missions &amp; objectifs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="description.html">Tâches &amp; contributions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../remerciements/remerciements.html">Remerciements</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../bilan/bilan.html">Bilan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../references/references.html">Références</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../annexes/annexes.html">Annexes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Rapport de Stage</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../accueil.html">Rapport de Stage</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../accueil.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../accueil.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_gestion_dune_base_de_données_spatiales"><a class="anchor" href="#_gestion_dune_base_de_données_spatiales"></a>Gestion d&#8217;une base de données spatiales</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Les bases de données spatiales ont pour vocation de stocker, interroger et manipuler des
+données géographiques, associant ainsi des informatons traditionnelles à des
+coordonnées spatiales. Ces bases offrent un support essentiel pour la
+planification urbaine, la gestion environnementale, la logistique et bien
+d&#8217;autres secteurs.</p>
+</div>
+<div class="paragraph">
+<p>Contrairement aux bases de données classiques qui traitent principalement
+des textes, des nombres ou des dates, les bases de données spatiales
+manipulent des entités géométriques (points, lignes, polygones) et même
+des volumes en trois dimensions. Ces entités peuvent représenter tout,
+depuis un simple lampadaire jusqu&#8217;à une grande forêt ou une rivière.</p>
+</div>
+<div class="paragraph">
+<p>Ce qui rend les bases de données spatiales vraiment puissantes, c&#8217;est leur
+capacité à répondre à des requêtes spatiales. Par exemple, on pourrait
+demander &#8220;Quels sont les hôpitaux situés à moins de 10 km d&#8217;une école ?&#8221;
+ou &#8220;Quelle est la superficie totale des zones protégées dans une région donnée ?&#8221;.
+Ces requêtes nécessitent des calculs géométriques complexes et des algorithmes
+spécifiques, qui sont implémentés dans les bases de données spatiales.</p>
+</div>
+<div class="paragraph">
+<p>De nombreux outils et logiciels ont été développés pour exploiter ces bases. <em>PostGIS</em>,
+une extension de <em>PostgreSQL</em>, est l&#8217;un des plus populaires et offre une panoplie
+de fonctions pour la manipulation de données spatiales. Mais il existe aussi
+d&#8217;autres systèmes comme <em>Oracle Spatial</em> ou <em>Microsoft SQL Server Spatial</em>, chacun
+ayant ses propres avantages et particularités.</p>
+</div>
+<div class="paragraph">
+<p>Durant mon stage, j&#8217;ai été immergé dans l&#8217;univers fascinant des bases de données
+spatiales en utilisant principalement PostGIS.</p>
+</div>
+<div class="sect2">
+<h3 id="_postgis"><a class="anchor" href="#_postgis"></a>PostGIS</h3>
+<div class="paragraph">
+<p>PostGIS est une extension qui ajoute des capacités géospatiales à PostgreSQL,
+permettant de traiter des informations spatiales. Les principales caractéristiques
+de PostGIS comprennent :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Des fonctions géospatiales étendues</dt>
+<dd>
+<p>Avec plus de 300 fonctions, PostGIS permet de réaliser une multitude d&#8217;opérations,
+de la simple extraction de données à des analyses spatiales complexes, telles
+que le calcul de distances, d&#8217;intersections, ou la détermination de zones tampons.</p>
+</dd>
+<dt class="hdlist1">La conformité aux standards</dt>
+<dd>
+<p>PostGIS est entièrement conforme aux spécifications de l&#8217;Open Geospatial Consortium (OGC),
+assurant la compatibilité avec une vaste gamme d&#8217;outils et de logiciels GIS.</p>
+</dd>
+<dt class="hdlist1">La performance et scalabilité</dt>
+<dd>
+<p>En héritant des capacités de performance de PostgreSQL et en combinant avec des optimisations
+spatiales, PostGIS peut gérer d&#8217;immenses jeux de données tout en maintenant des vitesses
+de requêtes impressionnates.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_du_stockage_de_fichiers_à_postgis"><a class="anchor" href="#_du_stockage_de_fichiers_à_postgis"></a>Du stockage de fichiers à PostGIS</h3>
+<div class="paragraph">
+<p>Les données utilisées lors du POC provennaient des jeux de données de l&#8217;Institut national de l&#8217;Information géographique et forestière (IGN)
+suivants :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">RGE ALTI®</dt>
+<dd>
+<p>Elle contient des données de modèles numériques de terrain (MNT) qui représentent la surface
+réelle du sol, sans les bâtiments ni les végétations. Il est disponible sous
+forme d&#8217;images rasters, par département. Les données sont livrées sous forme
+de dalles de 1 km², avec une résolution de 1 mètre. Ainsi chaque département
+est couvert par plusieurs dalles.</p>
+</dd>
+<dt class="hdlist1">MNS Corrélés (Modèle Numérique de Surface)</dt>
+<dd>
+<p>Elle contient des données de modèles numériques de surface (MNS) qui représentent la
+surface réelle du sol, avec les bâtiments et les végétations. Il est disponible
+sous forme d&#8217;images rasters, par département. Les données sont livrées sous
+forme de dalles de 1 km², avec une résolution de 0.5 mètre.
+Ainsi chaque département est couvert par plusieurs dalles.</p>
+</dd>
+<dt class="hdlist1">BD TOPO® (Base de Données TOPOgraphiques)</dt>
+<dd>
+<p>La BD TOPO® est une base de données vectorielles qui contient des informations
+topographiques sur l&#8217;ensemble du territoire français. Elle est utilisée pour
+classer les objets géographiques en différentes catégories, telles que les
+routes, les bâtiments, les cours d&#8217;eau, etc. Les données sont livrées sous
+forme de fichiers shapefile, par département, ou sous forme de fichiers SQL
+pour l&#8217;ensemble du territoire français. Etant donné un département, il existe un fichier shapefile pour chaque catégorie d&#8217;objets géographiques.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Lors du POC, nous avons utilisé les données du département du Bas-Rhin. Pour
+BDTOPO nous avons donc utilisé les fichiers shapefile. Tous ces fichiers
+étaient téléchargés et stockés sur une des machines de l&#8217;université.
+Cependant, à l&#8217;issue du POC, une des idées d&#8217;amélioration de l&#8217;outillage
+était de découper les shapefiles en dalles de 1 km², pour gagner en
+temps d&#8217;extraction d&#8217;une zone donnée. Puisque, pour extraire une zone il fallait :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>identifier les dalles de MNT et de MNS qui couvrent la zone</p>
+</li>
+<li>
+<p>en extraire les données (coordonnées x, y et z des points)</p>
+</li>
+<li>
+<p>classifier ces points selon chaque catégorie d&#8217;objets géographiques</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ces opérations étaient coûteuses en temps car il s&#8217;agissait majoritairement
+de lecture de fichiers. Par exemple, la lecture du shapefile de la BD TOPO®
+contenant tous les départements du Bas-Rhin prenait environ 7 minutes, peut
+importe les dimensions de la zone à extraire (même pour une zone de petite
+surface). C&#8217;est pourquoi il a été pensé de découper les shapefiles en dalles
+de 1 km², pour réduire le temps de lecture.</p>
+</div>
+<div class="paragraph">
+<p>Au cours du stage, j&#8217;ai donc effectué cette découpe, en utilisant les librairies
+Python <code>geopandas</code> et <code>rasterio</code>. Mais cette découpe avait un inconvénient majeur :
+la taille des données avait considérablement augmenté. L&#8217;ensemble des shapefiles
+du département du Bas-Rhin occupait environ 3 GB, alors que les shapefiles
+découpés en dalles de 1 km² occupaient environ 81 GB.</p>
+</div>
+<div class="paragraph">
+<p>C&#8217;est ce qui a motivé l&#8217;utilisation de PostGIS. Basé sur PostgreSQL, on peut
+ainsi profiter des optimisations de système de gestion de bases de données
+relationnelles, tout en bénéficiant des capacités géospatiales de PostGIS.</p>
+</div>
+<div class="paragraph">
+<p>Avec PostGIS, la lecture de tous les batiments du département du Bas-Rhin
+est quasi instantanée.</p>
+</div>
+<div class="paragraph">
+<p>Un autre avantage de PostGIS est l&#8217;extraction de zones ayant n&#8217;importe quelle forme polygonale, ce qui
+est très difficile à faire à partir de fichiers. En utilisant du
+WKT (Well-Known Text), et des fonctions d&#8217;union et de découpage d&#8217;un raster, on peut définir une zone sous forme de polygone et
+extraire les données qui s&#8217;y trouvent.</p>
+</div>
+<div class="paragraph">
+<p>Le WKT est une représentation textuelle d&#8217;un objet géométrique. Il est
+utilisé pour décrire des objets géométriques dans un format lisible par
+l&#8217;homme. Par exemple, un point est représenté par <code>POINT(0 0)</code>, un polygone
+par <code>POLYGON</code>, etc.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_travail_avec_postgis"><a class="anchor" href="#_travail_avec_postgis"></a>Travail avec PostGIS</h3>
+<div class="paragraph">
+<p>Pour des besoins de performance, nous avons décidé de stocker les données
+d&#8217;élévation dans une base de données PostGIS. Pour des raisons de sécurité, la
+création et la configuration de la base de données ont été faites par
+<strong>Philippe Spinoza</strong>, l&#8217;Ingénieur systèmes, réseaux et sécurité de l&#8217;entreprise.
+J&#8217;ai ensuité été chargé de télécharger des données d&#8217;élévation, de les préparer
+pour l&#8217;insertion dans la base, d&#8217;insérer les données dans la base, d&#8217;optimiser
+la base pour améliorer les performances et enfin d&#8217;utiliser la base dans la
+librairie.</p>
+</div>
+<div class="sect3">
+<h4 id="_téléchargement_des_données_délévation"><a class="anchor" href="#_téléchargement_des_données_délévation"></a>Téléchargement des données d&#8217;élévation</h4>
+<div class="paragraph">
+<p>La base de données doit contenir des Modèles Numériques de Terrain (MNT),
+des Modèles Numériques de Surface (MNS) et des données de classification.
+Ces informations sont obtenues sur le site de l&#8217;Institut National de l&#8217;Information
+Géographique et Forestière (IGN).</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Les données de MNT et de MNS</dt>
+<dd>
+<p>Pour des raisons de stockage, nous avons décidé de nous limiter au téléchargement des données
+de la région de l&#8217;Alsace, soit les départements du Bas-Rhin, du Haut-Rhin et de la Moselle.</p>
+</dd>
+<dt class="hdlist1">Les données de classification</dt>
+<dd>
+<p>Elles sont obtenues à partir des jeux de données BD TOPO® de l&#8217;IGN. Nous avons choisi le format SQL, qui est le plus adapté pour l&#8217;insertion dans la base de données.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_préparation_des_données_pour_linsertion_dans_la_base"><a class="anchor" href="#_préparation_des_données_pour_linsertion_dans_la_base"></a>Préparation des données pour l&#8217;insertion dans la base</h4>
+<div class="paragraph">
+<p>Les données sont proposées soit en format .7z, soit sous forme d&#8217;archives segmentées (.7z.001, .7z.002, etc.).
+Il a donc été nécessaire, une fois téléchargées de fusionner les archives segmentées, puis de les décompresser.
+Il a aussi fallu corriger le géoréférencement implémenté dans l&#8217;entête des fichiers shapefiles
+de MNS Corrélés, car il ne correspondait pas à leur description dans la documentation fournie par l&#8217;IGN.</p>
+</div>
+<div class="paragraph">
+<p>En effet, les coordonnées géographiques du coin supérieur gauche étaient
+légèrement décalées. Pour corriger ce problème, j&#8217;ai utilisé la librairie
+Python <code>rasterio</code> pour lire les fichiers et les réécrire avec les bonnes
+coordonnées géographiques.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_insertion_des_données_dans_la_base"><a class="anchor" href="#_insertion_des_données_dans_la_base"></a>Insertion des données dans la base</h4>
+<div class="paragraph">
+<p>A l&#8217;aide d&#8217;outils spécifiques tels que <code>psql</code>, <code>shp2pgsql</code> et <code>raster2pgsql</code>, j&#8217;ai inséré les données
+dans la base de données. Avec les données de MNT et de MNS des départements
+du Bas-Rhin, du Haut-Rhin et de la Moselle ainsi que les données BDTOPO de
+la france entière, la base de données occupait environ 321 GB.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_optimisation_de_la_base"><a class="anchor" href="#_optimisation_de_la_base"></a>Optimisation de la base</h4>
+<div class="paragraph">
+<p>Pour garantir des performances optimales, j&#8217;ai régulièrement créé et
+ajusté des index spatiaux pour les données de MNT et MNS insérés dans la base.
+Ces index, spécifiques aux données spatiales, permettent d&#8217;accélérer considérablement les requêtes.</p>
+</div>
+<div class="paragraph">
+<p>Un index spatial est une structure de données qui permet d&#8217;accélérer les
+requêtes spatiales sur un ensemble de données géospatiales. Contrairement
+aux index traditionnels qui sont conçus pour accélérer les requêtes sur
+des types de données simples comme les entiers et les chaînes, les index
+spatiaux sont conçus pour accélérer les requêtes sur des données
+multidimensionnelles telles que les coordonnées géographiques, les
+polygones, les lignes, etc. La structure d&#8217;indexation spatiale la plus
+connue est le R-Tree, qui est utilisé par PostGIS. Il en existe d&#8217;autres :
+Quad-Tree, KD-Tree, etc.</p>
+</div>
+<div class="paragraph">
+<p>Un R-Tree décompose l&#8217;espace en une hiérarchie de boîtes englobantes
+(bounding boxes). Il est particulièrement adapté pour indexer des données
+avec des formes irrégulières comme des polygones ou des lignes.</p>
+</div>
+<div class="paragraph">
+<p>J&#8217;ai également créé des vues matérialisés consistant à stocker le résultat
+d&#8217;une requête dans une table. Cela permet d&#8217;accélérer les requêtes en
+évitant de recalculer le résultat à chaque fois. En effet, les données
+BDTOPO chargés dans la base ont une couverture nationale. Pour ainsi
+se limiter à la région Alsace, j&#8217;ai créé une vue matérialisée qui
+contient uniquement les données de la région Alsace qui nous intéressent.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer" style="border-top: 2px solid #e9e9e9; background-color: #fafafa; padding-bottom: 2em; padding-top: 2em;">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;">
+        <div>
+            <a href="https://www.axessim.fr/" style="margin-right: 2rem;">
+                <img src="../../../_/img/logo-axessim.png" alt="AxesSim logo" height="50">
+            </a>
+            <a href="https://csmi.cemosis.fr/csmi/csmi/index.html" style="margin-right: 2rem;">
+                <img src="../../../_/img/logo-csmi.png" alt="CSMI logo" height="50">
+            </a>
+            <a href="https://www.unistra.fr/" style="margin-right: 0;">
+                <img src="../../../_/img/logo-unistra.png" alt="Unistra logo" height="50">
+            </a>
+        </div>
+    </div>
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

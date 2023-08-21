@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Rapport de Stage</title>
+    <link rel="canonical" href="https://docs.demo.com/rapport-de-stage/1.0/taches-contributions/amelet-hdf.html">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.demo.com">Rapport de Stage</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+            <a class="navbar-brand" href="https://www.axessim.fr/">
+                <img src="../../../_/img/logo-axessim.png" alt="CSMI logo" style="margin-right: 1rem; max-height: 40px; width: auto;"/>
+            </a>
+        </div>
+        <div class="navbar-item">
+            <a class="navbar-brand" href="https://csmi.cemosis.fr/csmi/csmi/index.html">
+                <img src="../../../_/img/logo-csmi.png" alt="CSMI logo" style="margin-right: 1rem; max-height: 40px; width: auto;"/>
+            </a>
+        </div>
+        <div class="navbar-item">
+            <a class="navbar-brand"  href="https://www.unistra.fr/">
+                <img src="../../../_/img/logo-unistra.png" alt="Cemosis logo" style="max-height: 40px; width: auto;"/>
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rapport-de-stage" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../accueil.html">Rapport de Stage</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../accueil.html">Accueil</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../organisme-accueil/presentation.html">Organisme d&#8217;accueil</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../missions-objectifs/description.html">Missions &amp; objectifs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="description.html">Tâches &amp; contributions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../remerciements/remerciements.html">Remerciements</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../bilan/bilan.html">Bilan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../references/references.html">Références</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../annexes/annexes.html">Annexes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Rapport de Stage</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../accueil.html">Rapport de Stage</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../accueil.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../accueil.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_génération_de_maillages_au_format_amelet_hdf"><a class="anchor" href="#_génération_de_maillages_au_format_amelet_hdf"></a>Génération de maillages au format Amelet HDF</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cette tâche s&#8217;incrit dans l&#8217;objectif de rendre l&#8217;outillage de developpement fourni
+lors du POC sur l&#8217;extraction de modèles numériques de terrain, compatible avec
+les outils utilisés au sein d&#8217;AxesSim.</p>
+</div>
+<div class="sect2">
+<h3 id="_format_amelet_hdf"><a class="anchor" href="#_format_amelet_hdf"></a>Format Amelet HDF</h3>
+<div class="paragraph">
+<p>Amelet HDF est un format de fichier spécifié par AxesSim dans le but de fournir
+une norme pour l&#8217;enregistrement et la récupération des données informatiques
+des simulations électromagnétiques.</p>
+</div>
+<div class="paragraph">
+<p>La spécification Amelet HDF est conçue pour exprimer différents types de données
+électromagnétiques, notamment :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Les maillages.</p>
+</li>
+<li>
+<p>Les données de tableau numérique.</p>
+</li>
+<li>
+<p>Les modèles de matériaux.</p>
+</li>
+<li>
+<p>Les réseaux et lignes de transmission.</p>
+</li>
+<li>
+<p>Les sources électromagnétiques.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Amelet HDF est basé sur le format de fichier HDF5 développé par le groupe <em>hdfgroup</em>,
+et largement inspiré du projet Amelet. Pour en savoir
+plus sur la structure d&#8217;un fichier Amelet HDF, vous pouvez consulter <a href="../annexes/amelet-hdf-structure.html" class="xref page">l&#8217;annexe A</a> ou <a href="https://www.axessim.fr/docs/amelethdf/1.7.1/">la documentation officielle</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_maillage"><a class="anchor" href="#_maillage"></a>Maillage</h3>
+<div class="paragraph">
+<p>Un maillage a pour objectif de simplifier la représentation d&#8217;un système
+par un modèle le représentant, pour des simulations numériques. Techniquement,
+il s&#8217;agit d&#8217;une discrétisation d&#8217;un système continu en un ensemble d&#8217;éléments
+géométriques élémentaires (triangles, quadrilatères, tétraèdres, hexaèdres, etc.)
+permettant en tout de représenter le système afin d&#8217;en effectuer des simulations
+numériques.</p>
+</div>
+<div class="paragraph">
+<p>Un maillage se compose de trois éléments principaux :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Les noeuds</dt>
+<dd>
+<p>Des points dans l&#8217;espace servant de fondation au maillage.</p>
+</dd>
+<dt class="hdlist1">Les éléments</dt>
+<dd>
+<p>Des formes géométriques reliant des noeuds voisins.</p>
+</dd>
+<dt class="hdlist1">Les groupes</dt>
+<dd>
+<p>Des ensembles d&#8217;éléments représentant des zones ou des volumes cruciaux
+pour la simulation.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Selon la disposition des noeuds, un maillage peut être :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">structuré</dt>
+<dd>
+<p>Les noeuds sont organisés en une grille régulière.</p>
+</dd>
+<dt class="hdlist1">non structuré</dt>
+<dd>
+<p>Les noeuds sont organisés de manière irrégulière.</p>
+</dd>
+<dt class="hdlist1">hybride</dt>
+<dd>
+<p>Le est maillage composé de plusieurs maillages
+structurés ou non structurés.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Selon la dimension de l&#8217;espace dans lequel on souhaite le représenter,
+un maillage peut être :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">linéique</dt>
+<dd>
+<p>Le maillage représente une ligne.</p>
+</dd>
+<dt class="hdlist1">surfacique</dt>
+<dd>
+<p>Le maillage représente une surface.</p>
+</dd>
+<dt class="hdlist1">volumique</dt>
+<dd>
+<p>Le maillage représente un volume.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>La surface de la Terre étant continue et variable, elle ne peut être représentée
+numériquement que par un maillage surfacique. Cependant, pour étudier l&#8217;aspect
+volumique de la Terre, à savoir le sous-sol, il est indispensable d&#8217;utiliser un
+maillage volumique pour une représentation numérique adéquate.</p>
+</div>
+<div class="paragraph">
+<p>Dans un maillage, il est parfois nécessaire de classifier, colorier ou regrouper
+des éléments (les mailles). Une maille est un élément géométrique reliant des
+noeuds voisins. Dans le cas d&#8217;un maillage surfacique, une maille peut-être un triangle, un quadrilatère, etc. Dans le cas d&#8217;un maillage volumique, une maille peut-être un tétraèdre, un hexaèdre, etc.</p>
+</div>
+<div class="paragraph">
+<p>Dans l&#8217;objectif d&#8217;intégrer plus tard potentiellement toutes les caractéristiques
+électromagnétiques d&#8217;une zone terrestre, il est nécessaire lors de la génération
+d&#8217;un maillage de cette zone, de classifier les mailles ou éléments de ce maillage.
+Par exemple, dans un environnement réel, nous disposons de caractéristiques tels
+que les bâtiments, de végétations, de cours d&#8217;eau, de routes, etc. Numériquement,
+nous appelons ces caractéristiques des classes ou des couleurs. Ainsi en
+représentant la zone terrestre par un maillage, il est possible de classifier
+les mailles de ce maillage en fonction de leur classe ou couleur, c&#8217;est à dire
+selon qu&#8217;elles appartiennent à un bâtiment, une végétation, etc. Voici un exemple
+de maillage surfacique classifié de la zone du Donon :</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/DSM_donon.png" alt="DSM donon">
+</div>
+<div class="title">Figure 1. Donon visualisé sous Paraview</div>
+</div>
+<div class="paragraph">
+<p>La librairie <em>psol</em> à l&#8217;issue du POC générait des maillages surfaciques non-structurés classifiées de zones extraites à partir des données de l&#8217;IGN. Ces maillages
+étaient ensuite exportés au format PLY afin d&#8217;être visualisés avec un logiciel
+de visualisation 3D ou de génération de scènes 3D. Voici le schéma de fonctionnement :</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/psol_poc.png" alt="psol poc">
+</div>
+<div class="title">Figure 2. fonctionnement de la librairie psol en sortie du POC</div>
+</div>
+<div class="paragraph">
+<p>L&#8217;utilisateur définit une zone partir de coordonnées géographiques. Ensuite,
+la librairie <em>psol</em> à partir des données de l&#8217;IGN, génère un nuage de points
+classifiés de la zone extraite. Ensuite, elle effectue une triangulation de
+Delaunay de ce nuage de points afin d&#8217;obtenir un maillage surfacique
+non structuré classifié.
+Enfin, elle exporte ce maillage au format PLY.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_du_format_ply_au_format_amelet_hdf"><a class="anchor" href="#_du_format_ply_au_format_amelet_hdf"></a>Du format PLY au format Amelet HDF</h3>
+<div class="paragraph">
+<p>Chez AxesSim, le logiciel MaxSim, utilisé pour générer des scènes et effectuer
+la modelisation électromagnétique ne prend pas en charge le format de fichier PLY.
+En effet, le principal format de fichier géré par MaxSim est Amelet HDF.
+Les formats de fichiers suivant peuvent être importés dans MaxSim :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Stereo litographic (.stl).</p>
+</li>
+<li>
+<p>I-DEAS (.unv).</p>
+</li>
+<li>
+<p>Object file format (.off).</p>
+</li>
+<li>
+<p>GMSH (.msh).</p>
+</li>
+<li>
+<p>VRML (.wrl).</p>
+</li>
+<li>
+<p>VTK (.vtk).</p>
+</li>
+<li>
+<p>3DXML (.3dxml).</p>
+</li>
+<li>
+<p>Comma-separated values (.csv).</p>
+</li>
+<li>
+<p>Finite differences data (.fdd).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Toutefois MaxSim effectue une conversion automatique en Amelet HDF.</p>
+</div>
+<div class="paragraph">
+<p>Ainsi pour pouvoir utiliser les maillages générés par la librairie <em>psol</em> dans
+MaxSim, il a fallu les convertir du format PLY au format Amelet HDF.
+La conversion a été effectuée en se basant sur la spécification Amelet HDF et
+en utilisant les outils de manipulation de fichiers Amelet HDF suivants :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">hdfview</dt>
+<dd>
+<p>Avec ce logiciel, il est possible de visualiser, créer, modifier et supprimer des
+données dans un fichier Amelet HDF.</p>
+</dd>
+<dt class="hdlist1">ah5</dt>
+<dd>
+<p>Il s&#8217;agit d&#8217;une librairie python développée par AxesSim et permettant de manipuler
+des fichiers Amelet HDF. Cette librairie est basée sur la librairie python pytables.</p>
+</dd>
+<dt class="hdlist1">pytables</dt>
+<dd>
+<p>Il s&#8217;agit d&#8217;une librairie python open source permettant de manipuler des fichiers HDF5.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Etant donné un nuage de points classifiés d&#8217;une zone extraite, et une
+triangulation de ce nuage de points, l&#8217;écriture d&#8217;un maillage surfacique
+classifié en Amelet-HDF s&#8217;effectue en utilisant l&#8217;algorithme suivant :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Pour chaque classe ou couleur disponible :
+    - Identifier les triangles dans le maillage, dont les trois sommets
+      sont associés à la classe ou couleur.
+    - Les regrouper au sein d'un groupe nommé selon la classe ou couleur.</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_maillage_structuré"><a class="anchor" href="#_maillage_structuré"></a>Maillage structuré</h3>
+<div class="paragraph">
+<p>Les maillages structurés sont des maillages adaptés aux méthodes numériques
+qui requièrent une structure régulière comme la FDTD (Finite Difference Time
+Domain).</p>
+</div>
+<div class="paragraph">
+<p>La FDTD est une méthode de calcul de différences finies dans le domaine temporel
+permettant de résoudre des équations différentielles dépendantes du temps, et
+est couramment utilisée en électromagnétisme pour la résolution des équations
+de Maxwell.</p>
+</div>
+<div class="paragraph">
+<p>Les maillages structurés sont prisés par la FDTD pour les raisons suivantes :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">simplicité</dt>
+<dd>
+<p>L&#8217;utilisation d&#8217;une grille structurée rend les calculs plus simples, car
+les dérivées spatiales peuvent être approximées par des différences finies
+standards.</p>
+</dd>
+<dt class="hdlist1">stabilité</dt>
+<dd>
+<p>La méthode FDTD a des critères de stabilité tels que la condition de
+Courant-Friedrichs-Lewy (CFL), qui définissent la taille du pas de temps
+en fonction de la discrétisation spatiale. Un maillage structuré assure
+une discrétisation spatiale uniforme, facilitant ainsi le respect de ces
+critères.</p>
+</dd>
+<dt class="hdlist1">efficacité</dt>
+<dd>
+<p>Les algorithmes basées sur des grilles structurées sont généralement plus
+rapides et necessitent moins de mémoire que ceux basés sur des grilles
+non structurées. De plus, la structure régulière du maillage s&#8217;accorde bien
+avec les architectures de calcul parallèle.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Un des objectifs du projet PSOL étant d&#8217;utiliser la méthode FDTD pour effectuer des
+calculs de propagation d&#8217;ondes électromagnétiques, il est nécessaire de
+générer des maillages structurés surfaciques et volumiques. Il a donc fallu
+générer des maillages structurés surfaciques et volumiques à partir des
+maillages non structurés surfaciques générés par la librairie <em>psol</em>.</p>
+</div>
+<div class="paragraph">
+<p>Le logiciel MaxSim permet de générer des maillages structurés surfaciques
+et structurés volumiques à partir de maillages non structurées surfaciques.
+Voici l&#8217;exemple d&#8217;un maillage structuré surfacique généré par MaxSim à partir
+d&#8217;un maillage non structuré surfacique :</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/vigie_classif.png" alt="vigie classif">
+</div>
+<div class="title">Figure 3. Maillage structuré surfacique classifié de la Vigie</div>
+</div>
+<div class="paragraph">
+<p>Les maillages structurés surfaciques générés par MaxSim sont bien classifiés
+selon les classes ou couleurs des maillages non structurés surfaciques à
+partir desquels ils ont été générés. Cependant, les maillages structurés
+volumiques générés par MaxSim rencontraient un problème de classification.
+Voici l&#8217;exemple d&#8217;un maillage structuré volumique de l&#8217;exemple précédent :</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/vigie_mal_classif.png" alt="vigie mal classif">
+</div>
+<div class="title">Figure 4. Maillage structuré volumique mal classifié de la Vigie</div>
+</div>
+<div class="paragraph">
+<p>Avoir des maillages structurés volumiques mal classifiés est un problème
+car il est nécessaire de classifier les mailles volumiques pour pouvoir
+bien modéliser les caractéristiques électromagnétiques d&#8217;une zone. Par
+exemple, si une maille volumique appartient à un bâtiment, il est nécessaire
+de la classifier comme telle pour pouvoir modéliser les caractéristiques
+électromagnétiques de ce bâtiment.</p>
+</div>
+<div class="paragraph">
+<p>Pour résoudre ce problème il a fallu manipuler les maillages structurés
+surfaciques générés par MaxSim. En effet, à l&#8217;aide de MaxSim, il est possible
+d&#8217;exporter un maillage structuré surfacique au format Amelet HDF. En se basant
+sur la spécification Amelet HDF et les outils de manipulation de fichiers
+Amelet HDF, j&#8217;ai manuellement créé un maillage structuré volumique avec des
+mailles volumiques bien classifiées en utilisant l&#8217;algorithme suivant :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Pour chaque groupe de mailles surfaciques :
+    Pour chaque maille surfacique parallèle au plan (XY) :
+        Si la maille appartient au sol :
+            - Créer une maille volumique en étirant la maille surfacique
+              jusqu'à atteindre l'altitude minimale de la grille cartésienne.
+        Sinon :
+            - Créer une maille volumique en étirant la maille surfacique
+              jusqu'à atteindre l'altitude mininiale de la maille surfacique du
+              sol.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Voici un exemple de maillage structuré volumique généré manuellement :</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/algorithmes_2.png" alt="algorithmes 2">
+</div>
+<div class="title">Figure 5. Maillage structuré volumique bien classifié du parc d&#8217;innovation les Algorithmes</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer" style="border-top: 2px solid #e9e9e9; background-color: #fafafa; padding-bottom: 2em; padding-top: 2em;">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;">
+        <div>
+            <a href="https://www.axessim.fr/" style="margin-right: 2rem;">
+                <img src="../../../_/img/logo-axessim.png" alt="AxesSim logo" height="50">
+            </a>
+            <a href="https://csmi.cemosis.fr/csmi/csmi/index.html" style="margin-right: 2rem;">
+                <img src="../../../_/img/logo-csmi.png" alt="CSMI logo" height="50">
+            </a>
+            <a href="https://www.unistra.fr/" style="margin-right: 0;">
+                <img src="../../../_/img/logo-unistra.png" alt="Unistra logo" height="50">
+            </a>
+        </div>
+    </div>
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

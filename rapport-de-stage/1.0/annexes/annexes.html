@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Annexes :: Rapport de Stage</title>
+    <link rel="canonical" href="https://docs.demo.com/rapport-de-stage/1.0/annexes/annexes.html">
+    <meta name="generator" content="Antora 3.1.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://docs.demo.com">Rapport de Stage</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+            <a class="navbar-brand" href="https://www.axessim.fr/">
+                <img src="../../../_/img/logo-axessim.png" alt="CSMI logo" style="margin-right: 1rem; max-height: 40px; width: auto;"/>
+            </a>
+        </div>
+        <div class="navbar-item">
+            <a class="navbar-brand" href="https://csmi.cemosis.fr/csmi/csmi/index.html">
+                <img src="../../../_/img/logo-csmi.png" alt="CSMI logo" style="margin-right: 1rem; max-height: 40px; width: auto;"/>
+            </a>
+        </div>
+        <div class="navbar-item">
+            <a class="navbar-brand"  href="https://www.unistra.fr/">
+                <img src="../../../_/img/logo-unistra.png" alt="Cemosis logo" style="max-height: 40px; width: auto;"/>
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rapport-de-stage" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../accueil.html">Rapport de Stage</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../accueil.html">Accueil</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../introduction/introduction.html">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../organisme-accueil/presentation.html">Organisme d&#8217;accueil</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../missions-objectifs/description.html">Missions &amp; objectifs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../taches-contributions/description.html">Tâches &amp; contributions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../remerciements/remerciements.html">Remerciements</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../bilan/bilan.html">Bilan</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../references/references.html">Références</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="annexes.html">Annexes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Rapport de Stage</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../accueil.html">Rapport de Stage</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../accueil.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../accueil.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../accueil.html">Rapport de Stage</a></li>
+    <li><a href="annexes.html">Annexes</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Annexes</h1>
+<div class="sect1">
+<h2 id="_annexe_a_structure_dun_fichier_amelet_hdf"><a class="anchor" href="#_annexe_a_structure_dun_fichier_amelet_hdf"></a>Annexe A: Structure d&#8217;un fichier Amelet HDF</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_hdf5"><a class="anchor" href="#_hdf5"></a>HDF5</h3>
+<div class="paragraph">
+<p>Tout comme le format HDF5 est organisé hierarchiquement comme un système
+de fichiers avec des dossiers et des fichiers. Les principaux types d&#8217;objets sont:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Group</dt>
+<dd>
+<p>Un &#8220;group&#8221; ressemble à un dossier dans un système de fichiers et peut contenir
+d&#8217;autres objets.</p>
+</dd>
+<dt class="hdlist1">Dataset</dt>
+<dd>
+<p>Un &#8220;dataset&#8221; est un tableau de données multidimensionnelles et est contenu dans
+un &#8220;group&#8221;, comme un fichier est contenu dans un dossier.</p>
+</dd>
+<dt class="hdlist1">Table</dt>
+<dd>
+<p>Un &#8220;table&#8221; est un &#8220;dataset&#8221; spécial représentant des données multicolonnes.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Voici un exemple de structure de fichier HDF5 :</p>
+</div>
+<div class="listingblock">
+<div class="title">exemple.h5</div>
+<div class="content">
+<pre>data.h5/
+|-- dataset1[@type=a_type]
+|-- table1
+|-- group1
+|   |-- dataset2
+|   |-- dataset3
+|   |-- table2
+|   |-- group2
+|   |   |-- table3
+|   |   `-- table4
+|   `-- table5
+|-- table2
+`-- dataset3</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Chaque objet est identifié par un chemin absolu ou relatif depuis le noeud racine ou
+un autre noeud. Par exemple, le chemin absolu de <code>table4</code> est <code>/group1/group2/table4</code>.
+Le chemin relatif de <code>table4</code> par rapport à <code>group1</code> est <code>group2/table4</code>.</p>
+</div>
+<div class="paragraph">
+<p>Chaque objet peut être décrit par des attributs, qui sont des paires clé-valeur.
+Par exemple, l&#8217;attribut <code>type</code> de <code>dataset1</code> a pour valeur <code>a_type</code>.
+La valeur d&#8217;un attribut peut être de n&#8217;importe quel type pris en charge par HDF5, tels
+que : entier, réel, booléen, chaîne de caractères.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;extension h5 est souvent associée aux fichiers HDF5.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_amelet_hdf"><a class="anchor" href="#_amelet_hdf"></a>Amelet HDF</h3>
+<div class="paragraph">
+<p>Amelet HDF est basé sur le format HDF5. Il ajoute des conventions pour l&#8217;organisation
+des données dans un fichier HDF5. Les conventions Amelet HDF sont les suivantes :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Attributs de fichiers</dt>
+<dd>
+<p>Une instance de fichier Amelet HDF doit avoir les attributs avec les valeurs suivantes :</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>data.h5[@FORMAT=AMELETHDF
+|       @AMELETHDF_FORMAT_VERSION=1.0.0]/
+`-- physicalModel
+    `-- volume
+        |--$water
+        `--$soltWater</pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Des catégories prédéfinies</dt>
+<dd>
+<p>Les objets Amelet HDF sont organisés dans des catégories (ou &#8220;group&#8221;) prédéfinies. En
+voici une la structure complète:</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>data.h5/
+|-- label
+|-- group
+|-- externalElement
+|-- globalEnvironment
+|-- electromagneticSource
+|   |-- planeWave
+|   |-- sphericalWave
+|   |-- generator
+|   |-- dipole
+|   |-- sourceOnMesh
+|   `-- antenna
+|-- physicalModel
+|   |-- multiport
+|   |-- multilayer
+|   |-- slotProperties
+|   |-- anisotropic
+|   |-- volume
+|   |-- aperture
+|   |-- shield
+|   `-- grid
+|-- mesh
+|-- floatingType
+|-- exchangeSurface
+|-- transmissionLine
+|   `--transmissionLineElement
+|-- network
+|   `-- $net1
+|       |-- topology
+|       |-- tubes
+|       |-- junctions
+|       `-- connections
+|-- link
+|-- outputRequest
+|-- localizationSystem
+|-- extensionTypes
+|   `-- $car
+`-- simulation
+    `-- $sim1
+        |-- input
+        `-- output</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pour plus d&#8217;informations, voir la documentation de la spécification Amelet HDF.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_les_maillages_dans_amelet_hdf"><a class="anchor" href="#_les_maillages_dans_amelet_hdf"></a>Les maillages dans Amelet HDF</h3>
+<div class="paragraph">
+<p>Dans Amelet HDF, les maillages se trouvent dans la catégorie <code>/mesh</code>. Etant
+donné la possibilité de maillages hybrides, les maillages sont stockés dans
+des groupes de la catégorie <code>/mesh</code>. En voici un exemple :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>data.h5/
+`-- mesh/
+    |-- $gmesh1
+    |    |-+ $mesh#5
+    |    `-+ $mesh_6
+    `-- $gmesh2
+        |-- $mesh1[@type=unstructured]/
+        |   |-- elementNodes
+        |   |-- elementTypes
+        |   |-- nodes
+        |   |-- group
+        |   |   |-- $field-location[@type=node]
+        |   |   |-- $right-wing[@type=element
+        |   |   |               @entityType=face]
+        |   |   `-- $left-wing[@type=element
+        |   |                  @entityType=face]
+        |   |-- groupGroup
+        |   |   `-- $wings
+        |   `-- selectorOnMesh
+        |       |-- nodes
+        |       |-- elements
+        |       `-- groups
+        |-+ $mesh-two
+        `-- $mesh-3[@type=structured]/
+            |-- cartesianGrid
+            |-- group
+            |   |-- $field-location[@type=node]
+            |   |-- $right-wing[@type=element
+            |   |               @entityType=face]
+            |   `-- $left-wing[@type=element
+            |                  @entityType=face]
+            |-- groupGroup
+            |   `-- $wings
+            `-- selectorOnMesh
+                |-- nodes
+                |-- elements
+                `-- groups</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Les noms d&#8217;objets commençant par un <code>$</code> sont des noms qui peuvent être
+modifiés par l&#8217;utilisateur.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Dans l&#8217;exemple ci-dessus, le maillage <code>data.h5:/mesh/$gmesh2/$mesh1</code>
+est un maillage non structuré et <code>data.h5:/mesh/$gmesh2/$mesh-3</code> est un
+maillage structuré.</p>
+</div>
+<div class="sect3">
+<h4 id="_maillage_non_structuré"><a class="anchor" href="#_maillage_non_structuré"></a>Maillage non structuré</h4>
+<div class="paragraph">
+<p>Dans Amelet HDF, un maillage non structuré est un groupe d&#8217;un groupe
+de la catégorie <code>/mesh</code> portant l&#8217;attribut <code>type</code> avec la valeur <code>unstructured</code>,
+et contenant les éléments obligatoires suivants :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>nodes</code></dt>
+<dd>
+<p>Un dataset contenant les coordonnées (x, y, z en 3D) des noeuds du maillage.</p>
+</dd>
+<dt class="hdlist1"><code>elementTypes</code></dt>
+<dd>
+<p>Un dataset contenant les types des éléments du maillage. Ces types sont
+des entiers et sont définis dans la documentation officielle de la
+spécification Amelet HDF. Par exemple, le type d&#8217;un triangle linéaire
+est 11.</p>
+</dd>
+<dt class="hdlist1"><code>elementNodes</code></dt>
+<dd>
+<p>Un dataset (uni-dimensionnel) contenant la connectivité des éléments du maillage.
+Pour chaque ligne du dataset <code>elementTypes</code>, correspond une ou plusieurs lignes
+du dataset <code>elementNodes</code> selon le type de l&#8217;élément.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Par exemple, pour le <code>/mesh/$gmesh/$mesh/elementTypes</code> suivant :</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">index</th>
+<th class="tableblock halign-left valign-top">type de l&#8217;élément</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><code>/mesh/$gmesh/$mesh/elementNodes</code> est :</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">index</th>
+<th class="tableblock halign-left valign-top">indices des noeuds de l&#8217;élément</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Un maillage non structuré peut contenir les éléments optionnels suivants :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>group</code></dt>
+<dd>
+<p>Un groupe contenant des datasets d&#8217;entiers (groupes d&#8217;éléments).
+Ces groupes d&#8217;éléments peuvent être utilisés pour définir des zones
+cruciales pour la simulation. Ces datasets sont d&#8217;ensembles d&#8217;indices
+de noeuds ou d&#8217;éléments selon qu&#8217;ils aient un attribut <code>type</code> avec la
+valeur <code>node</code> ou <code>element</code>. Si l&#8217;attribut <code>type</code> vaut <code>element</code>, alors
+le dataset a un attribut <code>entityType</code> avec l&#8217;une des valeurs suivante :</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>edge</code></dt>
+<dd>
+<p>Le dataset contient des éléments linéaires.</p>
+</dd>
+<dt class="hdlist1"><code>face</code></dt>
+<dd>
+<p>Le dataset contient des éléments surfaciques.</p>
+</dd>
+<dt class="hdlist1"><code>volume</code></dt>
+<dd>
+<p>Le dataset contient des éléments volumiques.</p>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1"><code>groupGroup</code></dt>
+<dd>
+<p>Un groupe contenant un ensemble de nom de groupes d&#8217;éléments. Autrement dit,
+il contient des datasets de chaînes de caractères. Ces chaînes de caractères
+sont les noms des groupes d&#8217;éléments contenus dans le groupe <code>group</code>.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Voici un exemple de maillage non structuré :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>data.h5
+`-- mesh/
+    `-- $gmesh1/
+        `-- $mesh1[@type=unstructured]/
+            |-- nodes
+            |-- elementTypes
+            |-- elementNodes
+            |-- group
+            |   |-- $field-location[@type=node]
+            |   |-- $right-wing[@type=element
+            |   |               @entityType=face]
+            |   `-- $left-wing[@type=element
+            |                  @entityType=face]
+            `-- groupGroup
+                `-- $wings</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>avec <code>data.h5:/mesh/$gmesh1/$mesh1/groupGroup/$wings</code> contenant :</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">index</th>
+<th class="tableblock halign-left valign-top">les enfants de <code>data.h5:/mesh/$gmesh1/$mesh1/group</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$right-wing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$left-wing</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_maillage_structuré"><a class="anchor" href="#_maillage_structuré"></a>Maillage structuré</h4>
+<div class="paragraph">
+<p>Dans Amelet HDF, un maillage structuré est un groupe d&#8217;un groupe
+de la catégorie <code>/mesh</code> portant l&#8217;attribut <code>type</code> avec la valeur <code>structured</code>,
+et contenant l&#8217;élément obligatoires suivants :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>cartesianGrid</code></dt>
+<dd>
+<p>Un groupe représentant la grille cartésienne du maillage. Selon la
+dimension du maillage (1, 2 ou 3), la grille est représentée par
+les vecteurs (datasets uni-dimensionnels) de floattants <code>x</code>, <code>y</code> et <code>z</code>.
+Ces datasets possèdent un attribut obligatoire <code>floatingType</code> = <code>vector</code>.
+Les noeuds du maillage sont les points de la grille cartésienne, c&#8217;est à
+dire les intersections des lignes de la grille cartésienne.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Selon la dimension de l&#8217;espace, chaque élément de la grille est défini à l&#8217;aide
+des indices i, j, k respectivement des vecteurs <code>x</code>, <code>y</code> et <code>z</code>. On distingue
+principallement les éléments suivants :</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>node</code></dt>
+<dd>
+<p>Un noeud A est défini par un tuple d&#8217;entier, la dimension du tuple dépendant
+de la dimension de l&#8217;espace:</p>
+</dd>
+</dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">dimension de l&#8217;espace</th>
+<th class="tableblock halign-left valign-top">coordonnées de A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">i</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j, k)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>edge</code></dt>
+<dd>
+<p>Une arête A est définie par deux noeuds alignés A et B selon un axe de la
+grille.</p>
+</dd>
+</dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">dimension de l&#8217;espace</th>
+<th class="tableblock halign-left valign-top">coordonnées de A</th>
+<th class="tableblock halign-left valign-top">coordonnées B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">i</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">i+1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i+1, j)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j+1)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j, k)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i+1, j, k)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j, k)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j+1, k)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j, k)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j, k+1)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>face</code></dt>
+<dd>
+<p>Une face est définie par deux noeuds A et B.</p>
+</dd>
+</dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">dimension de l&#8217;espace</th>
+<th class="tableblock halign-left valign-top">coordonnées de A</th>
+<th class="tableblock halign-left valign-top">coordonnées B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i+1, j+1)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j, k)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i+1, j+1, k)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j, k)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j+1, k+1)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j, k)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i+1, j, k+1)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>volume</code></dt>
+<dd>
+<p>Un volume est défini par deux noeuds A et B.</p>
+</dd>
+</dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">dimension de l&#8217;espace</th>
+<th class="tableblock halign-left valign-top">coordonnées de A</th>
+<th class="tableblock halign-left valign-top">coordonnées B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i, j, k)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(i+1, j+1, k+1)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Tout comme un maillage non structuré, un maillage structuré peut contenir les
+éléments optionnels suivants :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>group</code></p>
+</li>
+<li>
+<p><code>groupGroup</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Voici un exemple de maillage structuré :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>data.h5
+`-- mesh/
+    `-- $gmesh1/
+        `-- $mesh1[@type=structured]/
+            |-- cartesianGrid
+            |   |-- x[@physicalNature=length
+            |   |     @unit=meter]
+            |   |-- y[@physicalNature=length
+            |   |     @unit=meter]
+            |   `-- z[@physicalNature=length
+            |          @unit=meter]
+            |-- group
+                |-- $right-wing[@type=element
+                                @entityType=volume]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>où <code>data.h5:/mesh/$gmesh1/$mesh1/group/$right-wing</code> est :</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">imin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jmin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kmin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">imax</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jmax</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kmax</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Dans cet exemple, <code>data.h5:/mesh/$gmesh1/$mesh1/group/$right-wing</code> est un
+constité de 2 volumes.
+Chaque ligne de <code>data.h5:/mesh/$gmesh1/$mesh1/group/$right-wing</code> représente
+ainsi un ou plusieurs parallelepipedes rectangles de la grille cartésienne.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer" style="border-top: 2px solid #e9e9e9; background-color: #fafafa; padding-bottom: 2em; padding-top: 2em;">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;">
+        <div>
+            <a href="https://www.axessim.fr/" style="margin-right: 2rem;">
+                <img src="../../../_/img/logo-axessim.png" alt="AxesSim logo" height="50">
+            </a>
+            <a href="https://csmi.cemosis.fr/csmi/csmi/index.html" style="margin-right: 2rem;">
+                <img src="../../../_/img/logo-csmi.png" alt="CSMI logo" height="50">
+            </a>
+            <a href="https://www.unistra.fr/" style="margin-right: 0;">
+                <img src="../../../_/img/logo-unistra.png" alt="Unistra logo" height="50">
+            </a>
+        </div>
+    </div>
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
